@@ -21,6 +21,7 @@ BuildRequires:	flex
 BuildRequires:	cairo-devel >= 0.5.0
 BUildRequires:	graphviz-devel >= 2.4
 BuildRequires:	gtk+-devel
+BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
