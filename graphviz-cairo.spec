@@ -1,9 +1,3 @@
-# TODO:
-# - linking (duplicate code, somewhere linked dynamically, somewhere statically)
-#
-# Conditional build:
-%bcond_without	dynagraph	# without dynagraph program (they say it requires gcc 3.1)
-#
 Summary:	Cairo renderer plugin for graphviz
 Summary(pl):	Wtyczka renderuj±ca Cairo dla graphviza
 Name:		graphviz-cairo
@@ -18,10 +12,11 @@ BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
 BuildRequires:	bison
 BuildRequires:	flex
-BuildRequires:	cairo-devel >= 0.5.0
+BuildRequires:	cairo-devel >= 0.5.1
 BUildRequires:	graphviz-devel >= 2.4
-BuildRequires:	gtk+-devel
+BuildRequires:	gtk+2-devel >= 2:2.7.0
 BuildRequires:	libtool
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
