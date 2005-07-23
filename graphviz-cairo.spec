@@ -5,7 +5,7 @@
 %bcond_without	dynagraph	# without dynagraph program (they say it requires gcc 3.1)
 #
 Summary:	Cairo renderer plugin for graphviz
-Summary(pl):	Narzêdzie do wizualizacji w postaci grafów
+Summary(pl):	Wtyczka renderuj±ca Cairo dla graphviza
 Name:		graphviz-cairo
 Version:	2.4
 Release:	1
@@ -25,8 +25,12 @@ BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-A renderer plugin for graphviz that uses cairo and provides output formats
-such as png, x11.
+A renderer plugin for graphviz that uses cairo and provides output
+formats such as PNG, X11.
+
+%description -l pl
+Wtyczka renderuj±ca dla graphviza u¿ywaj±ca cairo i udostêpniaj±ca
+formaty wyj¶ciowe takie jak PNG, X11.
 
 %prep
 %setup -q
