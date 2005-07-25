@@ -50,9 +50,11 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %post
+umask 022
 [ ! -x %{_bindir}/dot ] || %{_bindir}/dot -V > /dev/null 2>&1
 
 %postun
+umask 022
 [ ! -x %{_bindir}/dot ] || %{_bindir}/dot -V > /dev/null 2>&1
 
 %files
