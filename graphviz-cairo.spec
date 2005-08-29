@@ -1,19 +1,19 @@
 Summary:	Cairo renderer plugin for graphviz
 Summary(pl):	Wtyczka renderuj±ca Cairo dla graphviza
 Name:		graphviz-cairo
-Version:	2.4
+Version:	2.6
 Release:	1
 License:	CPL v1.0
 Group:		X11/Applications/Graphics
 Source0:	http://www.graphviz.org/pub/graphviz/ARCHIVE/%{name}-%{version}.tar.gz
-# Source0-md5:	62c363e278a2854a50f3ae12ae3655c8
+# Source0-md5:	5fd63e7644e20686a99da152b08ffe94
 URL:		http://www.graphviz.org/
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
 BuildRequires:	bison
 BuildRequires:	flex
 BuildRequires:	cairo-devel >= 0.5.1
-BUildRequires:	graphviz-devel >= 2.4
+BUildRequires:	graphviz-devel >= 2.6
 BuildRequires:	gtk+2-devel >= 2:2.7.0
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
