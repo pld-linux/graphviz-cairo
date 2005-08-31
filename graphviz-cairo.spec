@@ -15,6 +15,7 @@ BuildRequires:	flex
 BuildRequires:	cairo-devel >= 0.5.1
 BUildRequires:	graphviz-devel >= 2.6
 BuildRequires:	gtk+2-devel >= 2:2.7.0
+BuildRequires:	libgnomeui-devel >= 2.0
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
