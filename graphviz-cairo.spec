@@ -18,6 +18,7 @@ BuildRequires:	gtk+2-devel >= 2:2.7.0
 BuildRequires:	libgnomeui-devel >= 2.0
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
+Requires:	graphviz >= 2.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -52,11 +53,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %post
 umask 022
-[ ! -x %{_bindir}/dot ] || %{_bindir}/dot -V > /dev/null 2>&1
+[ ! -x %{_bindir}/dot ] || %{_bindir}/dot -c > /dev/null 2>&1
 
 %postun
 umask 022
-[ ! -x %{_bindir}/dot ] || %{_bindir}/dot -V > /dev/null 2>&1
+[ ! -x %{_bindir}/dot ] || %{_bindir}/dot -c > /dev/null 2>&1
 
 %files
 %defattr(644,root,root,755)
