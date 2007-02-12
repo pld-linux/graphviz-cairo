@@ -2,7 +2,7 @@
 # Conditional build:
 %bcond_without	gnome	# without GNOME support
 Summary:	Cairo renderer plugin for graphviz
-Summary(pl):	Wtyczka renderuj±ca Cairo dla graphviza
+Summary(pl.UTF-8):   Wtyczka renderujÄ…ca Cairo dla graphviza
 Name:		graphviz-cairo
 Version:	2.8
 Release:	1
@@ -28,9 +28,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 A renderer plugin for graphviz that uses cairo and provides output
 formats such as PNG, X11.
 
-%description -l pl
-Wtyczka renderuj±ca dla graphviza u¿ywaj±ca cairo i udostêpniaj±ca
-formaty wyj¶ciowe takie jak PNG, X11.
+%description -l pl.UTF-8
+Wtyczka renderujÄ…ca dla graphviza uÅ¼ywajÄ…ca cairo i udostÄ™pniajÄ…ca
+formaty wyjÅ›ciowe takie jak PNG, X11.
 
 %prep
 %setup -q
