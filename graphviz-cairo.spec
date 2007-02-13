@@ -2,7 +2,7 @@
 # Conditional build:
 %bcond_without	gnome	# without GNOME support
 Summary:	Cairo renderer plugin for graphviz
-Summary(pl.UTF-8):   Wtyczka renderująca Cairo dla graphviza
+Summary(pl.UTF-8):	Wtyczka renderująca Cairo dla graphviza
 Name:		graphviz-cairo
 Version:	2.8
 Release:	1
