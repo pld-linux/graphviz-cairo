@@ -16,7 +16,7 @@ BuildRequires:	automake
 BuildRequires:	bison
 BuildRequires:	flex
 BuildRequires:	cairo-devel >= 0.5.1
-BUildRequires:	graphviz-devel >= 2.8
+BuildRequires:	graphviz-devel >= 2.8
 BuildRequires:	gtk+2-devel >= 2:2.8.0
 %{?with_gnome:BuildRequires:	libgnomeui-devel >= 2.0}
 BuildRequires:	libtool
